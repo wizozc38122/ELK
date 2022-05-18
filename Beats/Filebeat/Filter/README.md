@@ -1,0 +1,2 @@
+# Filter 技巧
+Filebeat也能做到filter的功能，有時候log較特殊奇怪，可以先在filebeat做好基本的log合併收集

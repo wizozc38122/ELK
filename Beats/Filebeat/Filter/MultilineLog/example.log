@@ -1,0 +1,8 @@
+    10:47:54,668 INFO  [stdout] (http-/192.168.1.1:80) Message1
+    10:47:54,668 ERROR [stderr] (http-/192.168.1.1:80) java.Event1Exception: ERROR
+    10:47:54,668 ERROR [stderr] (http-/192.168.1.1:80)         at ???(java:106)
+    10:47:54,668 ERROR [stderr] (http-/192.168.1.1:80)         at ???(java:108)
+    10:47:54,668 INFO  [stdout] (http-/192.168.1.1:80) Message2
+    10:47:54,675 ERROR [stderr] (http-/192.168.1.1:80) java.Event2Exception: ERROR
+    10:47:54,675 ERROR [stderr] (http-/192.168.1.1:80)         at ???(java:32)
+    10:47:54,675 ERROR [stderr] (http-/192.168.1.1:80)         at ???(java:77)

@@ -1,0 +1,11 @@
+# output to logstash
+output.logstash: 
+  hosts: [https://Node1.test.com:5044"] 
+  ssl.certificate_authorities: ["/your_path/elasticsearch-ca.pem"] 
+  ssl.certificate: "/your_path/http.crt" 
+  ssl.key: "/your_path/http.key" 
+
+# output to elasticsearch
+output.elasticsearch: 
+  hosts: ["https://Node1.test.com:9200"]  
+  protocol: "https" 

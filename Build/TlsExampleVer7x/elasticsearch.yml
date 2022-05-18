@@ -1,0 +1,30 @@
+# cluster name
+cluster.name: es_test_cluster
+
+# role
+node.name: node1
+node.master: true
+node.data: true
+
+# hostname
+network.host: Node1.test.com
+
+# port
+http.port: 9200
+transport.port: 9300
+
+# cluster
+discovery.seed_hosts: ["Node1.test.com:9300", "Node2.test.com:9300", "Node3.test.com:9300"]
+cluster.initial_master_nodes: ["node1", "node2", "node3"]
+
+
+# transport.ssl
+xpack.security.transport.ssl.enabled: true  
+xpack.security.transport.ssl.verification_mode: full  
+xpack.security.transport.ssl.keystore.path: /your_path/http.p12
+xpack.security.transport.ssl.truststore.path: /your_path/http.p12 
+
+# http.ssl
+xpack.security.http.ssl.enabled: true  
+xpack.security.http.ssl.keystore.path: your_path/http.p12 
+xpack.security.http.ssl.truststore.path: your_path/http.p12

@@ -1,0 +1,9 @@
+# hostname
+server.host: Node1.test.com
+
+# to elasticsearch
+elasticsearch.hosts: ["https://Node1.test.com:9200", "https://Node2.test.com:9200","https://Node3.test.com:9200"] 
+
+# ssl
+elasticsearch.ssl.certificateAuthorities: ["/your_path/elasticsearch-ca.pem"] 
+elasticsearch.ssl.verificationMode: full 

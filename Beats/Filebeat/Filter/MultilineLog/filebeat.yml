@@ -1,0 +1,19 @@
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+    - /log_path/log*
+  # 利用multiline專門來處理多行log
+  # 正規表達式，當遇到符合時就收集該行直到在次觸發條件才算終止
+  # 因此遇到每個Exception開頭就觸發直到遇到下一個Exception or stdout/INFO一般輸出結束
+  # 這樣就會包攬全部的Exception訊息合併一筆
+  multiline.type: pattern
+  multiline.pattern: 'Exception|stdout'
+  multiline.negate: true
+  multiline.match: after
+
+# 查看輸出
+output.file:
+  path: "/tmp/filebeat"
+  filename: filebeatt
+  number_of_files: 4
