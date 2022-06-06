@@ -141,7 +141,7 @@
     + http.key => 私鑰
     + http.p8 => 私鑰(logstash)
     + elasticsearch-ca.pem(信任憑證)
-
+213
 2. Logstash Pipeline Config => input
     ```ruby
     # vim  conf.d/your.conf 
